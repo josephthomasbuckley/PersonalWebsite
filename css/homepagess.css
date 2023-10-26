@@ -1,0 +1,47 @@
+body {
+    background-color: blanchedalmond;
+    background-image: url(NakedMikeLeigh.jpg);
+}
+
+
+h1 {
+    font: century-gothic, sans-serif;
+    font-weight: 500;
+    font-style: bold;
+
+    border-style: dotted;
+    border-width: 1px;
+
+    width : 220px ;
+    background-image: url(Rothko.jpg);
+    
+
+}
+
+p {
+    font-size: 20px;
+}
+
+.tab {
+    overflow:hidden;
+    position: relative;
+}
+
+
+.tab a{
+    text-align: right;
+    display: inline-block;
+
+    border : 1px solid;
+    width : 200px;
+    color:blanchedalmond;
+    
+}
+.tab a:hover {
+    background-color: black;
+}
+
+ .secrets {
+    cursor: not-allowed;
+} 
+
