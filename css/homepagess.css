@@ -1,6 +1,6 @@
 body {
     background-color: blanchedalmond;
-    background-image: url(NakedMikeLeigh.jpg);
+    background-image: url(../img/NakedMikeLeigh.jpg);
 }
 
 
@@ -13,35 +13,81 @@ h1 {
     border-width: 1px;
 
     width : 220px ;
-    background-image: url(Rothko.jpg);
+    background-image: url(../img/Rothko.jpg);
     
 
+}
+
+body p {
+    background-image : url(../img/Rothko.jpg);
+}
+
+.movie-of-the-week {
+    position: relative;
+}
+
+.movie-of-the-week span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 p {
     font-size: 20px;
 }
 
-.tab {
+.container {
     overflow:hidden;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.tab a{
+.container a{
     text-align: right;
     display: inline-block;
 
     border : 1px solid;
     width : 200px;
-    color:blanchedalmond;
+    
     
 }
-.tab a:hover {
+.container button:hover {
     background-color: black;
 }
 
- .secrets {
-    cursor: not-allowed;
-} 
+.btn {
+    position : relative;
+    background-image: url(../img/Rothko.jpg);
+    width: 10rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.btn::after {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    content: '';
+    height: 0.164rem;
+    background: midnightblue;
+}
+
+
+/*Lessons 2023/10/27 -- rem (size of root element font) and selectors, existence of "after" selector. */
+.btn-secrets {
+    cursor : not-allowed;
+}
+.btn::after {
+    transform: scale(0,1);
+    transition: transform .4s ease;
+}
+.btn:hover::after {
+    transform: scale(1,1);
+}
 
