@@ -1,6 +1,9 @@
 body {
     background-color: blanchedalmond;
     background-image: url(../img/NakedMikeLeigh.jpg);
+    margin:0;
+    
+    
 }
 
 
@@ -11,6 +14,7 @@ h1 {
 
     border-style: dotted;
     border-width: 1px;
+    align-items: right;
 
     width : 220px ;
     background-image: url(../img/Rothko.jpg);
@@ -20,16 +24,39 @@ h1 {
 
 body p {
     background-image : url(../img/Rothko.jpg);
+    width: 50%;
+}
+
+.recs-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    float: right;
+
+    width: 300px;
+    background-image: url(../img/Rothko.jpg);
+}
+
+.song-of-the-week {
+    
+    
+
+}
+
+#song-caption{
+    
+    justify-content: center;
+    align-items: center;
 }
 
 .movie-of-the-week {
-    position: relative;
 }
 
-.movie-of-the-week span{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+#movie-caption{
+    justify-content: center;
+    align-items: center;
 }
 
 p {
@@ -46,7 +73,7 @@ p {
 }
 
 .container a{
-    text-align: right;
+    text-align: center;
     display: inline-block;
 
     border : 1px solid;
@@ -91,3 +118,25 @@ p {
     transform: scale(1,1);
 }
 
+.news{
+    width: 50%;
+}
+
+#news-list{
+    background-image: url(../img/Rothko.jpg);
+}
+
+.log {
+    width: 50%;
+}
+#log-list {
+    background-image: url(../img/Rothko.jpg);
+}
+
+
+footer {
+    background-image: url(../img/Rothko.jpg);
+    position: fixed;
+    bottom: 0px;
+    width:fit-content
+}
