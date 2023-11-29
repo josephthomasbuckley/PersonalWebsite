@@ -6,17 +6,16 @@ body {
     
 }
 
-
 h1 {
     font: century-gothic, sans-serif;
     font-weight: 500;
     font-style: bold;
 
-    border-style: dotted;
+    border-style: solid;
     border-width: 1px;
     align-items: right;
 
-    width : 220px ;
+    width : fit-content ;
     background-image: url(../img/Rothko.jpg);
     
 
@@ -34,6 +33,7 @@ body p {
     align-items: center;
     justify-content: start;
     float: right;
+    border: 1px solid black;
 
     width: 300px;
     background-image: url(../img/Rothko.jpg);
@@ -131,11 +131,13 @@ p {
 }
 #log-list {
     background-image: url(../img/Rothko.jpg);
+    border-color:1px black;
 }
 
 
 footer {
     background-image: url(../img/Rothko.jpg);
+    border-color: black;
     position: fixed;
     bottom: 0px;
     width:fit-content
